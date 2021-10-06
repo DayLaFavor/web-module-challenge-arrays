@@ -46,7 +46,7 @@ Use the copy function below to do the following:
 */
 
 function copy(array){
-  
+  return array
 }    
 console.log(copy(originalFlavors))
 
@@ -139,7 +139,7 @@ function removeFlavorByName(array, flavor){
   let removedArray = [];
   for (let i = 0; i <array.length; i++){
     if (array[i] === (flavor)){
-      removedArray.slice(i, 1)
+      removedArray.pop
     }
   }
   return removedArray;
