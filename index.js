@@ -83,7 +83,8 @@ Use the addFlavor function below to do the following:
 */
 
 function addFlavor(array, string){
-  array.push(string);
+  array.unshift(string);
+  return array;
 }
 console.log(addFlavor([originalFlavors], "Rainbow Sherbert"))
 
