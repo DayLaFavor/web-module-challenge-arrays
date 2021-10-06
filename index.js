@@ -117,7 +117,7 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*2 para*/){
+function getFlavorByIndex(arrary, number){
   /*return array[index]*/
 }
 
@@ -138,13 +138,12 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(array, string){
-  let array = [];
-  for (let i = 0; i <array.length; i++){
-    if (array[i] === (string)){
-      array.pop
-    }
+  function removeFlavorByName(array, string){
+    let itemIndex = array.indexOf(string);
+    array.splice(itemIndex, 1);
+  
+    return array;
   }
-  return array;
 }
 
 console.log(removeFlavorByName(originalFlavors, 'Chocolate'))
