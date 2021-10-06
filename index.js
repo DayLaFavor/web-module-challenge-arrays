@@ -138,12 +138,10 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(array, string){
-  function removeFlavorByName(array, string){
-    let itemIndex = array.indexOf(string);
-    array.splice(itemIndex, 1);
+  let itemIndex = array.indexOf(string);
+  array.splice(itemIndex, 1);
   
-    return array;
-  }
+  return array;
 }
 
 console.log(removeFlavorByName(originalFlavors, 'Chocolate'))
