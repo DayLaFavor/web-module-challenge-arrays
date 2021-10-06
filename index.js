@@ -48,10 +48,7 @@ Use the copy function below to do the following:
 function copy(array){
   
 }    
-
 console.log(copy(originalFlavors))
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -88,7 +85,7 @@ Use the addFlavor function below to do the following:
 function addFlavor(array, string){
   array.push(string);
 }
-console.log(addFlavor(originalFlavors, "Rainbow Sherbert"))
+console.log(addFlavor([originalFlavors], "Rainbow Sherbert"))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
