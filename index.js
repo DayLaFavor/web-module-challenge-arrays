@@ -86,7 +86,7 @@ function addFlavor(array, string){
   array.unshift(string);
   return array;
 }
-console.log(addFlavor([originalFlavors], "Rainbow Sherbert"))
+console.log(addFlavor(originalFlavors, "Rainbow Sherbert"))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -100,7 +100,8 @@ Use the removeLastFlavor function below to do the following:
 */
 
 function removeLastFlavor(array){
-  array.pop;
+  array.pop();
+  return array;
 }
 console.log(removeLastFlavor(originalFlavors))
 
@@ -136,14 +137,14 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(array, flavor){
-  let removedArray = [];
+function removeFlavorByName(array, string){
+  let array = [];
   for (let i = 0; i <array.length; i++){
-    if (array[i] === (flavor)){
-      removedArray.pop
+    if (array[i] === (string)){
+      array.pop
     }
   }
-  return removedArray;
+  return array;
 }
 
 console.log(removeFlavorByName(originalFlavors, 'Chocolate'))
